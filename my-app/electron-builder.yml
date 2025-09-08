@@ -1,0 +1,21 @@
+appId: com.modbus.remoteio
+productName: Modbus Remote IO
+directories:
+  output: release
+files:
+  - dist/**
+  - dist-electron/**
+  - package.json
+asar: true
+extraMetadata:
+  main: dist-electron/main/index.cjs
+win:
+  target:
+    - portable
+  artifactName: "${productName}-${version}-win-${arch}-portable.${ext}"
+  signAndEditExecutable: false
+linux:
+  target:
+    - AppImage
+  category: Utility
+  artifactName: "${productName}-${version}-linux-${arch}.${ext}"

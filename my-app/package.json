@@ -1,0 +1,51 @@
+{
+  "name": "modbus-remote-io-app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Electron app for Modbus Remote I/O with discovery (Windows/Linux)",
+  "main": "dist-electron/main/index.cjs",
+  "type": "module",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "lint": "eslint . --ext .ts,.tsx,.cjs",
+    "format": "prettier --write .",
+    "test": "vitest",
+    "e2e": "playwright test",
+    "build:portable:win": "electron-builder --win portable",
+    "build:portable:linux": "electron-builder --linux AppImage",
+    "build:portable": "npm run build && electron-builder --win portable --linux AppImage"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^6.0.0",
+    "@mui/material": "^6.0.0",
+    "@tanstack/react-query": "^5.56.2",
+    "modbus-serial": "^8.0.21",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zod": "^3.23.8",
+    "zustand": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "electron": "^31.2.1",
+    "electron-builder": "^24.13.3",
+    "electron-vite": "^2.3.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8",
+    "vitest": "^2.1.3",
+    "playwright": "^1.48.0"
+  }
+}

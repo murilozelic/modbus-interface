@@ -1,0 +1,56 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+*.swp
+*.swo
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Node
+**/node_modules/
+**/.pnp
+**/.pnp.js
+**/.yarn/cache
+**/.yarn/unplugged
+
+# Build output
+**/dist/
+**/build/
+**/.next/
+**/out/
+**/.nuxt/
+**/.svelte-kit/
+**/.parcel-cache/
+**/.cache/
+**/.vite/
+
+# Testing / coverage
+**/coverage/
+.nyc_output
+
+# TypeScript
+*.tsbuildinfo
+
+# Tool caches
+.eslintcache
+.stylelintcache
+

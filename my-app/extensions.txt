@@ -1,0 +1,16 @@
+Extensions installed on Dev Container: Node.js & TypeScript @ desktop-linux:
+dbaeumer.vscode-eslint
+esbenp.prettier-vscode
+ms-python.autopep8
+ms-python.debugpy
+ms-python.python
+ms-python.vscode-pylance
+ms-python.vscode-python-envs
+anthropic.claude-code
+expo.vscode-expo-tools
+google.gemini-cli-vscode-ide-companion
+google.geminicodeassist
+ms-vscode-remote.remote-containers
+openai.chatgpt
+pkief.material-icon-theme
+redhat.vscode-yaml
